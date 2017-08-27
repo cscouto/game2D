@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project firstLayout="">
+    <gdVersion build="94" major="4" minor="0" revision="0" />
+    <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+        <name>Project</name>
+        <author></author>
+        <windowWidth>800</windowWidth>
+        <windowHeight>600</windowHeight>
+        <latestCompilationDirectory></latestCompilationDirectory>
+        <maxFPS>60</maxFPS>
+        <minFPS>10</minFPS>
+        <verticalSync>false</verticalSync>
+        <extensions>
+            <extension name="BuiltinObject" />
+            <extension name="BuiltinAudio" />
+            <extension name="BuiltinVariables" />
+            <extension name="BuiltinTime" />
+            <extension name="BuiltinMouse" />
+            <extension name="BuiltinKeyboard" />
+            <extension name="BuiltinJoystick" />
+            <extension name="BuiltinCamera" />
+            <extension name="BuiltinWindow" />
+            <extension name="BuiltinFile" />
+            <extension name="BuiltinNetwork" />
+            <extension name="BuiltinScene" />
+            <extension name="BuiltinAdvanced" />
+            <extension name="Sprite" />
+            <extension name="BuiltinCommonInstructions" />
+            <extension name="BuiltinCommonConversions" />
+            <extension name="BuiltinStringInstructions" />
+            <extension name="BuiltinMathematicalTools" />
+            <extension name="BuiltinExternalLayouts" />
+            <extension name="TiledSpriteObject" />
+            <extension name="PlatformBehavior" />
+            <extension name="TextObject" />
+        </extensions>
+        <platforms>
+            <platform name="GDevelop JS platform" />
+        </platforms>
+        <currentPlatform>GDevelop JS platform</currentPlatform>
+    </properties>
+    <resources>
+        <resources>
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/grassHalfMid.png" kind="image" name="grassHalfMid.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player.png" kind="image" name="player.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_1.png" kind="image" name="player_run_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_2.png" kind="image" name="player_run_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_3.png" kind="image" name="player_run_3.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_4.png" kind="image" name="player_run_4.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_5.png" kind="image" name="player_run_5.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_6.png" kind="image" name="player_run_6.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_1.png" kind="image" name="player_fall_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Background.png" kind="image" name="Background.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../Desktop/Gold.png" kind="image" name="Gold.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/CharB2.png" kind="image" name="CharB2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/2DSmallWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
+        </resources>
+        <resourceFolders />
+    </resources>
+    <objects />
+    <objectsGroups />
+    <variables />
+    <layouts>
+        <layout b="252" disableInputWhenNotFocused="true" mangledName="New_32scene" name="New scene" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="75" standardSortMethod="false" stopSoundsOnStartup="true" title="" v="203">
+            <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="true" zoomFactor="1.000000" />
+            <objectsGroups />
+            <variables />
+            <instances>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="186.999817" x="1880.000000" y="446.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="personagem" width="0.000000" x="321.000031" y="229.000000" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="519.000061" x="-0.999969" y="487.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="personagem" width="0.000000" x="321.000031" y="229.000000" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="-36.000008" y="0.000000" zOrder="3">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="ponte" width="0.000000" x="593.000061" y="342.000000" zOrder="4">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2196.000000" y="167.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="ScoreText" width="0.000000" x="18.000008" y="33.999985" zOrder="6">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="157.999939" x="667.000000" y="339.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="878.000000" y="481.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="1078.000000" y="474.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="1251.000000" y="317.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="1450.000000" y="471.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="871.999939" x="3381.000000" y="466.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="1601.000000" y="311.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2195.000000" y="290.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2428.000000" y="452.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2634.000000" y="260.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2810.000000" y="430.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="233.999939" x="3010.000000" y="207.000000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="bad" width="0.000000" x="4132.000000" y="352.000000" zOrder="7">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="475.000000" layer="" locked="false" name="parede" width="32.000000" x="4220.000000" y="-5.999990" zOrder="8">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="475.000000" layer="" locked="false" name="parede" width="32.000000" x="4220.000000" y="-5.999990" zOrder="8">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="237.000000" layer="" locked="false" name="parede" width="32.000000" x="3383.000244" y="229.000000" zOrder="9">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="237.000000" layer="" locked="false" name="parede" width="32.000000" x="3383.000244" y="229.000000" zOrder="9">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="407.000000" layer="" locked="false" name="parede" width="32.000000" x="0.000004" y="78.999992" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="96.999992" y="313.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="136.000000" y="342.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="0.999992" y="0.000000" zOrder="3">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="189.000000" y="375.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="255.000000" y="404.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="359.000000" y="404.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="451.000000" y="399.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="576.000000" y="228.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="658.999939" y="227.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="755.999939" y="231.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="884.999939" y="396.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="882.999939" y="215.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="981.999939" y="293.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1078.000000" y="389.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1135.000000" y="298.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1254.999878" y="170.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1456.999878" y="250.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1600.999878" y="214.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="30.000000" x="1744.999878" y="136.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="1887.999878" y="370.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="1930.999878" y="372.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="1976.999878" y="370.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2024.999878" y="372.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+            </instances>
+            <objects>
+                <object height="32.000000" name="chao" texture="grassHalfMid.png" type="TiledSpriteObject::TiledSprite" width="32.000000">
+                    <variables />
+                    <behaviors>
+                        <behavior canBeGrabbed="true" name="Platform" platformType="NormalPlatform" type="PlatformBehavior::PlatformBehavior" yGrabOffset="0.000000" />
+                    </behaviors>
+                </object>
+                <object name="personagem" type="Sprite">
+                    <variables />
+                    <behaviors>
+                        <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1000.000000" ignoreDefaultControls="false" jumpSpeed="1000.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
+                    </behaviors>
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="player.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="33.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="66.000000" />
+                                                    <vertice x="0.000000" y="66.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="0.100000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="player_jump_1.png2">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_jump_2.png2">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_fall_1.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_fall_2.png2">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="true" timeBetweenFrames="0.100000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_1.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="33.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="66.000000" />
+                                                    <vertice x="0.000000" y="66.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_2.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="33.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="66.000000" />
+                                                    <vertice x="0.000000" y="66.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_3.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_4.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_5.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="player_run_6.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="fundo" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="Background.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="400.500000" y="300.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="801.000000" y="0.000000" />
+                                                    <vertice x="801.000000" y="601.000000" />
+                                                    <vertice x="0.000000" y="601.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="ponte" type="Sprite">
+                    <variables />
+                    <behaviors>
+                        <behavior canBeGrabbed="true" name="Platform" platformType="Jumpthru" type="PlatformBehavior::PlatformBehavior" yGrabOffset="0.000000" />
+                    </behaviors>
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="bridgeLogs.png2">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="35.000000" y="12.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="70.000000" y="0.000000" />
+                                                    <vertice x="70.000000" y="25.000000" />
+                                                    <vertice x="0.000000" y="25.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="coin" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="Gold.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="64.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="128.000000" />
+                                                    <vertice x="0.000000" y="128.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object bold="true" italic="false" name="ScoreText" smoothed="true" type="TextObject::Text" underlined="false">
+                    <variables />
+                    <behaviors />
+                    <string>Text</string>
+                    <font></font>
+                    <characterSize>20</characterSize>
+                    <color b="0" g="0" r="0" />
+                </object>
+                <object name="bad" type="Sprite">
+                    <variables />
+                    <behaviors>
+                        <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1000.000000" ignoreDefaultControls="true" jumpSpeed="600.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
+                    </behaviors>
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="CharB2.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="24.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="48.000000" y="0.000000" />
+                                                    <vertice x="48.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object height="32.000000" name="parede" texture="2DSmallWoodBox.jpg" type="TiledSpriteObject::TiledSprite" width="32.000000">
+                    <variables />
+                    <behaviors>
+                        <behavior canBeGrabbed="true" name="Platform" platformType="NormalPlatform" type="PlatformBehavior::PlatformBehavior" yGrabOffset="0.000000" />
+                    </behaviors>
+                </object>
+            </objects>
+            <events>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="PlatformBehavior::IsJumping" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>PlatformerObject</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="ChangeAnimation" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>=</parameter>
+                                <parameter>1</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="PlatformBehavior::IsOnFloor" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>PlatformerObject</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <condition>
+                                    <type inverted="true" value="PlatformBehavior::IsMoving" />
+                                    <parameters>
+                                        <parameter>personagem</parameter>
+                                        <parameter>PlatformerObject</parameter>
+                                    </parameters>
+                                    <subConditions />
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action>
+                                    <type inverted="false" value="ChangeAnimation" />
+                                    <parameters>
+                                        <parameter>personagem</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <condition>
+                                    <type inverted="false" value="PlatformBehavior::IsMoving" />
+                                    <parameters>
+                                        <parameter>personagem</parameter>
+                                        <parameter>PlatformerObject</parameter>
+                                    </parameters>
+                                    <subConditions />
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action>
+                                    <type inverted="false" value="ChangeAnimation" />
+                                    <parameters>
+                                        <parameter>personagem</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>2</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                            </actions>
+                            <events />
+                        </event>
+                    </events>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions />
+                    <actions>
+                        <action>
+                            <type inverted="false" value="CameraX" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>=</parameter>
+                                <parameter>personagem.X()</parameter>
+                                <parameter></parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Left</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="FlipX" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>yes</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Right</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="FlipX" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>no</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="CollisionNP" />
+                            <parameters>
+                                <parameter>personagem</parameter>
+                                <parameter>coin</parameter>
+                                <parameter></parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Delete" />
+                            <parameters>
+                                <parameter>coin</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="ModVarScene" />
+                            <parameters>
+                                <parameter>Score</parameter>
+                                <parameter>+</parameter>
+                                <parameter>1</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions />
+                    <actions>
+                        <action>
+                            <type inverted="false" value="TextObject::String" />
+                            <parameters>
+                                <parameter>ScoreText</parameter>
+                                <parameter>=</parameter>
+                                <parameter>&quot;Score: &quot;+ToString(Variable(Score))</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+            </events>
+            <layers>
+                <layer name="New layer" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                    <effects />
+                </layer>
+                <layer name="" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                    <effects />
+                </layer>
+            </layers>
+            <behaviorsSharedData>
+                <behaviorSharedData name="Platform" type="PlatformBehavior::PlatformBehavior" />
+                <behaviorSharedData name="PlatformerObject" type="PlatformBehavior::PlatformerObjectBehavior" />
+            </behaviorsSharedData>
+        </layout>
+    </layouts>
+    <externalEvents />
+    <externalLayouts />
+    <externalSourceFiles />
+</project>

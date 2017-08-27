@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project firstLayout="">
+    <gdVersion build="94" major="4" minor="0" revision="0" />
+    <properties folderProject="true" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+        <name>Project</name>
+        <author></author>
+        <windowWidth>800</windowWidth>
+        <windowHeight>600</windowHeight>
+        <latestCompilationDirectory></latestCompilationDirectory>
+        <maxFPS>60</maxFPS>
+        <minFPS>10</minFPS>
+        <verticalSync>false</verticalSync>
+        <extensions>
+            <extension name="BuiltinObject" />
+            <extension name="BuiltinAudio" />
+            <extension name="BuiltinVariables" />
+            <extension name="BuiltinTime" />
+            <extension name="BuiltinMouse" />
+            <extension name="BuiltinKeyboard" />
+            <extension name="BuiltinJoystick" />
+            <extension name="BuiltinCamera" />
+            <extension name="BuiltinWindow" />
+            <extension name="BuiltinFile" />
+            <extension name="BuiltinNetwork" />
+            <extension name="BuiltinScene" />
+            <extension name="BuiltinAdvanced" />
+            <extension name="Sprite" />
+            <extension name="BuiltinCommonInstructions" />
+            <extension name="BuiltinCommonConversions" />
+            <extension name="BuiltinStringInstructions" />
+            <extension name="BuiltinMathematicalTools" />
+            <extension name="BuiltinExternalLayouts" />
+            <extension name="TiledSpriteObject" />
+            <extension name="PlatformBehavior" />
+            <extension name="TextObject" />
+        </extensions>
+        <platforms>
+            <platform name="GDevelop JS platform" />
+        </platforms>
+        <currentPlatform>GDevelop JS platform</currentPlatform>
+    </properties>
+    <resources>
+        <resources>
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/grassHalfMid.png" kind="image" name="grassHalfMid.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player.png" kind="image" name="player.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_1.png" kind="image" name="player_run_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_2.png" kind="image" name="player_run_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_3.png" kind="image" name="player_run_3.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_4.png" kind="image" name="player_run_4.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_5.png" kind="image" name="player_run_5.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_6.png" kind="image" name="player_run_6.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_1.png" kind="image" name="player_fall_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Background.png" kind="image" name="Background.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png2" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../Desktop/Gold.png" kind="image" name="Gold.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/CharB2.png" kind="image" name="CharB2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/2DSmallWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
+        </resources>
+        <resourceFolders />
+    </resources>
+    <objects />
+    <objectsGroups />
+    <variables />
+    <layouts>
+        <layout name="New scene" referenceTo="/layouts/layout" />
+    </layouts>
+    <externalEvents />
+    <externalLayouts />
+    <externalSourceFiles />
+</project>
