@@ -41,27 +41,23 @@
     </properties>
     <resources>
         <resources>
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/grassHalfMid.png" kind="image" name="grassHalfMid.png" smoothed="true" userAdded="true" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player.png" kind="image" name="player.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_1.png" kind="image" name="player_run_1.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_2.png" kind="image" name="player_run_2.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_3.png" kind="image" name="player_run_3.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_4.png" kind="image" name="player_run_4.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_5.png" kind="image" name="player_run_5.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_run_6.png" kind="image" name="player_run_6.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_1.png" kind="image" name="player_fall_1.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_fall_2.png" kind="image" name="player_fall_2.png2" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_1.png" kind="image" name="player_jump_1.png2" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/player_jump_2.png" kind="image" name="player_jump_2.png2" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Background.png" kind="image" name="Background.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png" smoothed="true" userAdded="true" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/bridgeLogs.png" kind="image" name="bridgeLogs.png2" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../Desktop/Gold.png" kind="image" name="Gold.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/CharB2.png" kind="image" name="CharB2.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/2DSmallWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="res/grassHalfMid.png" kind="image" name="grassHalfMid.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="res/player.png" kind="image" name="player.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_jump_1.png" kind="image" name="player_jump_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_1.png" kind="image" name="player_run_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_2.png" kind="image" name="player_run_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_3.png" kind="image" name="player_run_3.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_4.png" kind="image" name="player_run_4.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_5.png" kind="image" name="player_run_5.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_run_6.png" kind="image" name="player_run_6.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_fall_2.png" kind="image" name="player_fall_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_jump_2.png" kind="image" name="player_jump_2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/player_fall_1.png" kind="image" name="player_fall_1.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/Background.png" kind="image" name="Background.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/bridgeLogs.png" kind="image" name="bridgeLogs.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="res/Gold.png" kind="image" name="Gold.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/CharB2.png" kind="image" name="CharB2.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="res/2DSmallWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
         </resources>
         <resourceFolders />
     </resources>
@@ -94,17 +90,12 @@
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="-36.000008" y="0.000000" zOrder="3">
-                    <numberProperties />
-                    <stringProperties />
-                    <initialVariables />
-                </instance>
                 <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="ponte" width="0.000000" x="593.000061" y="342.000000" zOrder="4">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2196.000000" y="167.000000" zOrder="5">
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="3153.000000" y="95.000008" zOrder="5">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -319,6 +310,41 @@
                     <stringProperties />
                     <initialVariables />
                 </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2200.000000" y="168.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2433.000000" y="338.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2495.000000" y="268.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2548.000000" y="194.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2642.000000" y="121.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2820.000000" y="315.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="3056.000000" y="96.000008" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
             </instances>
             <objects>
                 <object height="32.000000" name="chao" texture="grassHalfMid.png" type="TiledSpriteObject::TiledSprite" width="32.000000">
@@ -358,7 +384,7 @@
                             <directions>
                                 <direction looping="false" timeBetweenFrames="0.100000">
                                     <sprites>
-                                        <sprite hasCustomCollisionMask="false" image="player_jump_1.png2">
+                                        <sprite hasCustomCollisionMask="false" image="player_jump_1.png">
                                             <points />
                                             <originPoint name="origine" x="0.000000" y="0.000000" />
                                             <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -371,7 +397,7 @@
                                                 </polygon>
                                             </customCollisionMask>
                                         </sprite>
-                                        <sprite hasCustomCollisionMask="false" image="player_jump_2.png2">
+                                        <sprite hasCustomCollisionMask="false" image="player_jump_2.png">
                                             <points />
                                             <originPoint name="origine" x="0.000000" y="0.000000" />
                                             <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -385,19 +411,6 @@
                                             </customCollisionMask>
                                         </sprite>
                                         <sprite hasCustomCollisionMask="false" image="player_fall_1.png">
-                                            <points />
-                                            <originPoint name="origine" x="0.000000" y="0.000000" />
-                                            <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
-                                            <customCollisionMask>
-                                                <polygon>
-                                                    <vertice x="0.000000" y="0.000000" />
-                                                    <vertice x="0.000000" y="0.000000" />
-                                                    <vertice x="0.000000" y="0.000000" />
-                                                    <vertice x="0.000000" y="0.000000" />
-                                                </polygon>
-                                            </customCollisionMask>
-                                        </sprite>
-                                        <sprite hasCustomCollisionMask="false" image="player_fall_2.png2">
                                             <points />
                                             <originPoint name="origine" x="0.000000" y="0.000000" />
                                             <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -539,7 +552,7 @@
                             <directions>
                                 <direction looping="false" timeBetweenFrames="1.000000">
                                     <sprites>
-                                        <sprite hasCustomCollisionMask="false" image="bridgeLogs.png2">
+                                        <sprite hasCustomCollisionMask="false" image="bridgeLogs.png">
                                             <points />
                                             <originPoint name="origine" x="0.000000" y="0.000000" />
                                             <centerPoint automatic="true" name="centre" x="35.000000" y="12.500000" />

@@ -24,11 +24,6 @@
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="-36.000008" y="0.000000" zOrder="3">
-            <numberProperties />
-            <stringProperties />
-            <initialVariables />
-        </instance>
         <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="ponte" width="0.000000" x="593.000061" y="342.000000" zOrder="4">
             <numberProperties />
             <stringProperties />
@@ -323,7 +318,7 @@
                     <directions>
                         <direction looping="false" timeBetweenFrames="0.100000">
                             <sprites>
-                                <sprite hasCustomCollisionMask="false" image="player_jump_1.png2">
+                                <sprite hasCustomCollisionMask="false" image="player_jump_1.png">
                                     <points />
                                     <originPoint name="origine" x="0.000000" y="0.000000" />
                                     <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -336,7 +331,7 @@
                                         </polygon>
                                     </customCollisionMask>
                                 </sprite>
-                                <sprite hasCustomCollisionMask="false" image="player_jump_2.png2">
+                                <sprite hasCustomCollisionMask="false" image="player_jump_2.png">
                                     <points />
                                     <originPoint name="origine" x="0.000000" y="0.000000" />
                                     <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -504,7 +499,7 @@
                     <directions>
                         <direction looping="false" timeBetweenFrames="1.000000">
                             <sprites>
-                                <sprite hasCustomCollisionMask="false" image="bridgeLogs.png2">
+                                <sprite hasCustomCollisionMask="false" image="bridgeLogs.png">
                                     <points />
                                     <originPoint name="origine" x="0.000000" y="0.000000" />
                                     <centerPoint automatic="true" name="centre" x="35.000000" y="12.500000" />
