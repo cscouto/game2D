@@ -33,6 +33,7 @@
             <extension name="TiledSpriteObject" />
             <extension name="PlatformBehavior" />
             <extension name="TextObject" />
+            <extension name="PathfindingBehavior" />
         </extensions>
         <platforms>
             <platform name="GDevelop JS platform" />
@@ -58,7 +59,7 @@
             <resource alwaysLoaded="false" file="res/bridgeLogs.png" kind="image" name="bridgeLogs.png" smoothed="true" userAdded="true" />
             <resource alwaysLoaded="false" file="res/Gold.png" kind="image" name="Gold.png" smoothed="true" userAdded="false" />
             <resource alwaysLoaded="false" file="res/CharB2.png" kind="image" name="CharB2.png" smoothed="true" userAdded="false" />
-            <resource alwaysLoaded="false" file="res/2DWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="res/2DSmallWoodBox.jpg" kind="image" name="2DSmallWoodBox.jpg" smoothed="true" userAdded="true" />
         </resources>
         <resourceFolders />
     </resources>
@@ -166,7 +167,7 @@
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="bad" width="0.000000" x="4132.000000" y="352.000000" zOrder="7">
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="bad" width="0.000000" x="4133.000000" y="352.000000" zOrder="7">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -623,6 +624,7 @@
                 <object name="bad" type="Sprite">
                     <variables />
                     <behaviors>
+                        <behavior acceleration="400.000000" allowDiagonals="true" angleOffset="0.000000" angularMaxSpeed="180.000000" cellHeight="20" cellWidth="20" extraBorder="0.000000" maxSpeed="200.000000" name="Pathfinding" rotateObject="true" type="PathfindingBehavior::PathfindingBehavior" />
                         <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1000.000000" ignoreDefaultControls="true" jumpSpeed="600.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
                     </behaviors>
                     <animations>
@@ -881,6 +883,7 @@
                 </layer>
             </layers>
             <behaviorsSharedData>
+                <behaviorSharedData name="Pathfinding" type="PathfindingBehavior::PathfindingBehavior" />
                 <behaviorSharedData name="Platform" type="PlatformBehavior::PlatformBehavior" />
                 <behaviorSharedData name="PlatformerObject" type="PlatformBehavior::PlatformerObjectBehavior" />
             </behaviorsSharedData>
