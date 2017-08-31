@@ -2,7 +2,9 @@
 <projectPartial b="252" disableInputWhenNotFocused="true" mangledName="New_32scene" name="New scene" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="75" standardSortMethod="false" stopSoundsOnStartup="true" title="" v="203">
     <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="true" zoomFactor="1.000000" />
     <objectsGroups />
-    <variables />
+    <variables>
+        <variable name="badLife" value="100" />
+    </variables>
     <instances>
         <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="186.999817" x="1880.000000" y="446.000000" zOrder="1">
             <numberProperties />
@@ -84,12 +86,12 @@
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2634.000000" y="260.000000" zOrder="1">
+        <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2617.000000" y="316.000000" zOrder="1">
             <numberProperties />
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2810.000000" y="430.000000" zOrder="1">
+        <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="chao" width="41.999939" x="2836.000000" y="317.000000" zOrder="1">
             <numberProperties />
             <stringProperties />
             <initialVariables />
@@ -99,7 +101,7 @@
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="bad" width="0.000000" x="4132.000000" y="352.000000" zOrder="7">
+        <instance angle="0.000000" customSize="true" height="89.000000" layer="" locked="false" name="bad" width="52.000000" x="4105.000000" y="331.000000" zOrder="7">
             <numberProperties />
             <stringProperties />
             <initialVariables />
@@ -120,11 +122,6 @@
             <initialVariables />
         </instance>
         <instance angle="0.000000" customSize="true" height="237.000000" layer="" locked="false" name="parede" width="32.000000" x="3383.000244" y="229.000000" zOrder="9">
-            <numberProperties />
-            <stringProperties />
-            <initialVariables />
-        </instance>
-        <instance angle="0.000000" customSize="true" height="407.000000" layer="" locked="false" name="parede" width="32.000000" x="0.000004" y="78.999992" zOrder="10">
             <numberProperties />
             <stringProperties />
             <initialVariables />
@@ -139,7 +136,7 @@
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="0.999992" y="0.000000" zOrder="3">
+        <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="fundo" width="0.000000" x="2.999992" y="0.000000" zOrder="3">
             <numberProperties />
             <stringProperties />
             <initialVariables />
@@ -269,12 +266,17 @@
             <stringProperties />
             <initialVariables />
         </instance>
-        <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2820.000000" y="315.000000" zOrder="5">
+        <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="2843.000000" y="236.000000" zOrder="5">
             <numberProperties />
             <stringProperties />
             <initialVariables />
         </instance>
         <instance angle="0.000000" customSize="true" height="31.000008" layer="" locked="false" name="coin" width="26.000000" x="3056.000000" y="96.000008" zOrder="5">
+            <numberProperties />
+            <stringProperties />
+            <initialVariables />
+        </instance>
+        <instance angle="0.000000" customSize="false" height="0.000000" layer="New layer" locked="false" name="StatusGame" width="0.000000" x="59.000000" y="246.000000" zOrder="7">
             <numberProperties />
             <stringProperties />
             <initialVariables />
@@ -288,9 +290,12 @@
             </behaviors>
         </object>
         <object name="personagem" type="Sprite">
-            <variables />
+            <variables>
+                <variable name="life" value="100" />
+            </variables>
             <behaviors>
-                <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1000.000000" ignoreDefaultControls="false" jumpSpeed="1000.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
+                <behavior extraBorder="0.000000" name="DestroyOutside" type="DestroyOutsideBehavior::DestroyOutside" />
+                <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1300.000000" ignoreDefaultControls="false" jumpSpeed="1000.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
             </behaviors>
             <animations>
                 <animation name="" useMultipleDirections="false">
@@ -357,7 +362,7 @@
                                         </polygon>
                                     </customCollisionMask>
                                 </sprite>
-                                <sprite hasCustomCollisionMask="false" image="player_fall_2.png2">
+                                <sprite hasCustomCollisionMask="false" image="player_fall_2.png">
                                     <points />
                                     <originPoint name="origine" x="0.000000" y="0.000000" />
                                     <centerPoint automatic="true" name="centre" x="0.000000" y="0.000000" />
@@ -556,6 +561,7 @@
         <object name="bad" type="Sprite">
             <variables />
             <behaviors>
+                <behavior acceleration="400.000000" allowDiagonals="true" angleOffset="0.000000" angularMaxSpeed="180.000000" cellHeight="20" cellWidth="20" extraBorder="0.000000" maxSpeed="100.000000" name="Pathfinding" rotateObject="true" type="PathfindingBehavior::PathfindingBehavior" />
                 <behavior acceleration="1500.000000" canGrabPlatforms="false" deceleration="1500.000000" gravity="1000.000000" ignoreDefaultControls="true" jumpSpeed="600.000000" maxFallingSpeed="700.000000" maxSpeed="250.000000" name="PlatformerObject" slopeMaxAngle="60.000000" type="PlatformBehavior::PlatformerObjectBehavior" xGrabTolerance="10.000000" yGrabOffset="0.000000" />
             </behaviors>
             <animations>
@@ -587,6 +593,41 @@
             <behaviors>
                 <behavior canBeGrabbed="true" name="Platform" platformType="NormalPlatform" type="PlatformBehavior::PlatformBehavior" yGrabOffset="0.000000" />
             </behaviors>
+        </object>
+        <object bold="true" italic="false" name="StatusGame" smoothed="true" type="TextObject::Text" underlined="false">
+            <variables />
+            <behaviors />
+            <string>GAME OVER!!!</string>
+            <font></font>
+            <characterSize>100</characterSize>
+            <color b="0" g="0" r="255" />
+        </object>
+        <object name="bullet" type="Sprite">
+            <variables />
+            <behaviors />
+            <animations>
+                <animation name="" useMultipleDirections="false">
+                    <directions>
+                        <direction looping="false" timeBetweenFrames="1.000000">
+                            <sprites>
+                                <sprite hasCustomCollisionMask="false" image="Bullet.png">
+                                    <points />
+                                    <originPoint name="origine" x="0.000000" y="0.000000" />
+                                    <centerPoint automatic="true" name="centre" x="5.000000" y="5.000000" />
+                                    <customCollisionMask>
+                                        <polygon>
+                                            <vertice x="0.000000" y="0.000000" />
+                                            <vertice x="10.000000" y="0.000000" />
+                                            <vertice x="10.000000" y="10.000000" />
+                                            <vertice x="0.000000" y="10.000000" />
+                                        </polygon>
+                                    </customCollisionMask>
+                                </sprite>
+                            </sprites>
+                        </direction>
+                    </directions>
+                </animation>
+            </animations>
         </object>
     </objects>
     <events>
@@ -713,7 +754,16 @@
             </conditions>
             <actions>
                 <action>
-                    <type inverted="false" value="FlipX" />
+                    <type inverted="false" value="ChangeDirection" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>=</parameter>
+                        <parameter>-180</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+                <action>
+                    <type inverted="false" value="FlipY" />
                     <parameters>
                         <parameter>personagem</parameter>
                         <parameter>yes</parameter>
@@ -737,7 +787,16 @@
             </conditions>
             <actions>
                 <action>
-                    <type inverted="false" value="FlipX" />
+                    <type inverted="false" value="ChangeDirection" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>=</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+                <action>
+                    <type inverted="false" value="FlipY" />
                     <parameters>
                         <parameter>personagem</parameter>
                         <parameter>no</parameter>
@@ -798,6 +857,255 @@
             </actions>
             <events />
         </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions />
+            <actions>
+                <action>
+                    <type inverted="false" value="AddForceVers" />
+                    <parameters>
+                        <parameter>bad</parameter>
+                        <parameter>personagem</parameter>
+                        <parameter>150</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="CollisionNP" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>bad</parameter>
+                        <parameter></parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="ModVarObjet" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>life</parameter>
+                        <parameter>-</parameter>
+                        <parameter>1</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="DepartScene" />
+                    <parameters>
+                        <parameter></parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="Cache" />
+                    <parameters>
+                        <parameter>StatusGame</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="NbObjet" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>=</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="Montre" />
+                    <parameters>
+                        <parameter>StatusGame</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="NbObjet" />
+                    <parameters>
+                        <parameter>bad</parameter>
+                        <parameter>=</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="TextObject::String" />
+                    <parameters>
+                        <parameter>StatusGame</parameter>
+                        <parameter>=</parameter>
+                        <parameter>&quot;VOCE VENCEU&quot;</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+                <action>
+                    <type inverted="false" value="Montre" />
+                    <parameters>
+                        <parameter>StatusGame</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="KeyPressed" />
+                    <parameters>
+                        <parameter></parameter>
+                        <parameter>LControl</parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="Create" />
+                    <parameters>
+                        <parameter></parameter>
+                        <parameter>bullet</parameter>
+                        <parameter>personagem.X()</parameter>
+                        <parameter>personagem.Y()</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+                <action>
+                    <type inverted="false" value="AddForceAL" />
+                    <parameters>
+                        <parameter>bullet</parameter>
+                        <parameter>personagem.Direction()</parameter>
+                        <parameter>200</parameter>
+                        <parameter>1</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="CollisionNP" />
+                    <parameters>
+                        <parameter>bullet</parameter>
+                        <parameter>bad</parameter>
+                        <parameter></parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="ModVarScene" />
+                    <parameters>
+                        <parameter>badLife</parameter>
+                        <parameter>-</parameter>
+                        <parameter>1</parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+                <action>
+                    <type inverted="false" value="Delete" />
+                    <parameters>
+                        <parameter>bullet</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="VarScene" />
+                    <parameters>
+                        <parameter>badLife</parameter>
+                        <parameter>=</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="Delete" />
+                    <parameters>
+                        <parameter>bad</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
+        <event disabled="false" folded="false">
+            <type>BuiltinCommonInstructions::Standard</type>
+            <conditions>
+                <condition>
+                    <type inverted="false" value="VarObjet" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter>life</parameter>
+                        <parameter>=</parameter>
+                        <parameter>0</parameter>
+                    </parameters>
+                    <subConditions />
+                </condition>
+            </conditions>
+            <actions>
+                <action>
+                    <type inverted="false" value="Delete" />
+                    <parameters>
+                        <parameter>personagem</parameter>
+                        <parameter></parameter>
+                    </parameters>
+                    <subActions />
+                </action>
+            </actions>
+            <events />
+        </event>
     </events>
     <layers>
         <layer name="New layer" visibility="true">
@@ -814,6 +1122,7 @@
         </layer>
     </layers>
     <behaviorsSharedData>
+        <behaviorSharedData name="Pathfinding" type="PathfindingBehavior::PathfindingBehavior" />
         <behaviorSharedData name="Platform" type="PlatformBehavior::PlatformBehavior" />
         <behaviorSharedData name="PlatformerObject" type="PlatformBehavior::PlatformerObjectBehavior" />
     </behaviorsSharedData>
